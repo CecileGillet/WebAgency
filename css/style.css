@@ -456,3 +456,65 @@ h3 {
     left: 1px;
 }
 
+/*MAP*/
+
+/*MEDIA QUIERIES TABLETTE*/
+
+@media only screen and (max-width: 768px) {
+   /*SLIDER*/
+    h1 {
+        width: 350px;
+        font-size: 1.4rem;
+    }
+
+    .slider-paragraphe {
+        font-size: 0.55rem;
+    }
+
+    .button-info a {
+        font-size: 0.55rem;
+    }
+
+    /*SERVICES*/
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    #services-intro {
+        width: 90%;
+    }
+
+    #services-info {
+        top: -30px;
+    }
+
+    .services-icons {
+        top:67px;
+    }
+
+    /*PORTFOLIO*/
+    #project-intro {
+        width: 70%;
+    }
+
+    .elements {
+        height: 40px;
+    }
+
+    .eye-button {
+        width: 20px;
+        height: 20px;
+    }
+
+    .eye-button i {
+        font-size: 0.7rem;
+        top: 5px;
+        left: 0;
+    }
+}
+
+/*MEDIAQUIERIES MOBILE*/
+
+@media only screen and (max-width: 425px) {
+
+}

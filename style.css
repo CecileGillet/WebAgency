@@ -1,4 +1,4 @@
-* RESET ALL PADDING AND MARGIN */
+/* RESET ALL PADDING AND MARGIN */
 *
 {
     padding: 0;
@@ -34,6 +34,7 @@ nav ul {
 
 li {
     text-decoration: none;
+    font-size: 0.9rem;
 }
 
 header a {
