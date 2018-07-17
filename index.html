@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="WebAgency réalise vos projets les plus fous!" />
+	<meta name="keywords" content="agence, web, infos, projet" />
+	<meta name="author" content="webagency" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="./images/ico/favicon.ico" rel="icon" type="image/x-icon" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+	<link href="./css/reset.css" rel="stylesheet" />
+	<link href="./css/style.css" rel="stylesheet" />
+	<link href="./css/fontawesome-all.min.css" rel="stylesheet" />
+	<title>WebAgency</title>
+	<!-- Open Graph data-->
+	<meta property="og:title" content="WebAgency"/>
+	<meta property="og:type" content="website"/>
+	<!--a modifier-->
+	<meta property="og:url" content="http://www.A MODIFIER.com/"/>
+	<meta property="og:image" content="http://example.com/image.jpg"/>
+	<meta property="og:description" content="Présentation de WebAgency"/>
+</head>
+<body>
+	<header>
+		<div id="container-logo-menu">
+			<div id="logo-container">
+				<img src="./images/logo.png" alt="logo Webagency">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#Accueil" id="accueil">Accueil</a></li>
+					<li><a href="#Services">Services</a></li>
+					<li><a href="#Portfolio">Portfolio</a></li>
+					<li><a href="#Contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="slideshow">
+		<div class="slide-fade"><!-- slide fade en position relative -->
+			<img id="slider-img" src="./images/slider/bg1.jpg" alt="background" />
+			<div id="arrow-left" class="arrow"><!-- slide fade en position absolute -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			</div>
+			<div id="arrow-right" class="arrow"><!-- slide fade en position absolute -->
+				<a class="next" onclick="plusSlides(1)" >&#10095;</a>
+			</div>
+			<div class="webagency-intro">
+				<h1><span>WebAgency</span> : l'agence de tous vos projets !</h1>
+				<p class="slider-paragraphe">Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+				<div class="button-info">
+					<a href="#services">Plus d'infos</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="section-services">
+		<h2>Nos services</h2>
+		<div class="separator"></div>
+		<p id="services-intro">
+			Nous accompagnons nos clients dans la création de site internet: étude, UX, conception, design, développement, SEO. <br/>
+			Notre agence web est capable de répondre à tous vos besoins et d'élaborer une véritable stratégie digitale.
+		</p>
+		<div id="services-content">
+			<img src="./images/main-feature.png" alt="screen picture" />
+			<div id="services-info">
+				<div class="services-blocks">
+					<div class="services-icons">
+						<i class="fas fa-chart-line fa-2x"></i>
+						<div class="blue-dot"></div>
+					</div>
+					<div class="services-speech">
+						<h3>UX Design</h3>
+						<p>
+							Le UX design consiste à penser et à concevoir un site web de manière à ce que l’expérience utilisateur soit la meilleure possible.
+						</p>
+
+					</div>
+				</div>
+
+				<div class="services-blocks">
+					<div class="services-icons">
+						<i class="fas fa-cubes fa-2x"></i>
+						<div class="blue-dot"></div>
+					</div>
+
+					<div class="services-speech">
+						<h3>UI Design</h3>
+						<p>
+							La mission de l’UI designer consiste à créer une interface agréable et pratique, facile à prendre en main.
+						</p>
+					</div>
+				</div>
+
+				<div class="services-blocks">
+					<div class="services-icons">
+						<i class="fas fa-chart-pie fa-2x"></i>
+						<div class="blue-dot"></div>
+					</div>
+
+					<div class="services-speech">
+						<h3>SEO</h3>
+						<p>
+							Le SEO (Search Engine Optimization), consiste à optimiser un site web afin qu'il obtienne la meilleure visibilité possible dans les résultats naturels des moteurs de recherche.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="section-portfolio">
+		<h2>Nos projets</h2>
+		<div class="separator"></div>
+		<p id="project-intro">Plongez-vous encore un peu plus dans l'univers de notre agence. Vous trouverez ici quelques projets récemment créés par notre équipe.</p>
+		<div id="portfolio-menu">
+			<nav id="portfolio-menu-liste">
+				<ul>
+					<li><a href="#">All Works</a></li>
+					<li><a href="#">Creative</a></li>
+					<li><a href="#">Corporate</a></li>
+					<li><a href="#">Portfolio</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="portfolio-content">
+			<div class="project-element">
+				<img src="./images/portfolio/01.jpg" alt="Funny Project Logo" />
+				<div class="project-layer">
+					<div class="elements">
+						<h4>Project Funny</h4>
+						<p>Création de site</p>
+						<div class="eye-button">
+							<i class="fas fa-eye"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-element">
+				<img src="./images/portfolio/02.jpg" alt="Bunny Project Logo" />
+				<div class="project-layer">
+					<div class="elements">
+						<h4>Bunny Project</h4>
+						<p>Création de site</p>
+						<div class="eye-button">
+							<i class="fas fa-eye"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-element">
+				<img src="./images/portfolio/03.jpg" alt="Pompadour Project Logo" />
+				<div class="project-layer">
+					<div class="elements">
+						<h4>Pompadour</h4>
+						<p>Création de site</p>
+						<div class="eye-button">
+							<i class="fas fa-eye"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-element">
+				<img src="./images/portfolio/04.jpg" alt="Note book Project Logo" />
+				<div class="project-layer">
+					<div class="elements">
+						<h4>Note book</h4>
+						<p>Création de site</p>
+						<div class="eye-button">
+							<i class="fas fa-eye"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-element">
+				<img src="./images/portfolio/05.jpg" alt="ShoppingOnline Project Logo" />
+				<div class="project-layer">
+					<div class="elements">
+						<h4>E-commerce</h4>
+						<p>Création de site</p>
+						<div class="eye-button">
+							<i class="fas fa-eye"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-element">
+				<img src="./images/portfolio/06.jpg" alt="Travelers Agency Project Logo" />
+				<div class="project-layer">
+					<div class="elements">
+						<h4>Stratégie digital</h4>
+						<p>Création de site</p>
+						<div class="eye-button">
+							<i class="fas fa-eye"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-element">
+				<img src="./images/portfolio/07.jpg" alt="Digital Design Project Logo" />
+				<div class="project-layer">
+					<div class="elements">
+						<h4>Digital</h4>
+						<p>Création de site</p>
+						<div class="eye-button">
+							<i class="fas fa-eye"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="project-element">
+				<img src="./images/portfolio/08.jpg" alt="E-book Project Logo" />
+				<div class="project-layer">
+					<div class="elements">
+						<h4>E-Book</h4>
+						<p>Création de site</p>
+						<div class="eye-button">
+							<i class="fas fa-eye"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+		
+	</section>
+
+</body>
+</html>

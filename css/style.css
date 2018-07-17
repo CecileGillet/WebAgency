@@ -1,0 +1,458 @@
+/* RESET ALL PADDING AND MARGIN */
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+    font-family: "Roboto";
+    color: #575A5E;
+    font-size: 0.8em;
+    overflow-x: hidden;
+}
+
+/*HEADER*/
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    color: #575A5E;
+    text-decoration: none;
+}
+
+li {
+    text-decoration: none;
+    width: 100%;
+}
+
+header a {
+    color: #575A5E;
+    text-decoration:none;
+    position:relative;
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    display: block;
+    padding: 14px 16px;
+    float: left;
+    width: 50%;
+    left: 15%;
+}
+
+header a:after{
+    content:'';
+    width:0%;
+    margin-left:50%;
+    height:2px;
+    top: 0;
+    left:0;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+    border-radius:40%;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition:all 0.5s;
+    position:absolute;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition:all 0.5s;
+}
+
+header a:hover:after {
+    background-color: #5DADD2;
+    width:60%;
+    margin-left:20%;
+    -moz-box-shadow: 10px 0px 0px #5DADD2;
+    -webkit-box-shadow: 10px 0px 0px #5DADD2;
+    -o-box-shadow: 10px 0px 0px #5DADD2;
+    box-shadow: 10px 0px 0px #5DADD2;
+}
+
+header a.accueil {
+    color: #5DADD2;
+}
+
+#container-logo-menu {
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo-container {
+    width: 20%;
+}
+
+#logo-container img {
+    width: 100%;
+}
+
+/*SLIDER*/
+
+#slideshow {
+    position: relative;
+    top: 125px;
+    width: 100%;
+}
+
+.slide-fade {
+    position: relative;
+    width: 100%;
+}
+
+#slider-img {
+    width: 100%;
+}
+
+/* Adding global class arrow */
+
+.arrow
+{
+    position: absolute;
+    top: 45%;
+    width: 1.5em;
+    height: 2.5em;
+    border: 1px solid #000000;
+    background-color: #000000;
+    opacity: 0.5;
+}
+
+#arrow-left {
+    left:0;
+    border-radius: 0 2em 2em 0;
+}
+
+.prev {
+    position: absolute;
+    top: 31%;
+    left: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#arrow-right {
+    right: 0;
+    border-radius: 2em 0 0 2em;
+}
+
+.next {
+    position: absolute;
+    top: 31%;
+    right: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.webagency-intro {
+    position: absolute;
+    top: 25%;
+    left: 7%;
+    font-size: 1vw; /* Formatage du texte */
+   /* width: 400px; PAS BESOIN */
+}
+
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 1.7rem;
+    width: 420px;
+    padding-bottom: : 10px
+}
+
+span {
+    color: #5DADD2;
+    text-transform: uppercase;
+}
+
+.slider-paragraphe {
+    color: #fff;
+    padding: 10px 0 17px 0;
+}
+
+.button-info {
+    border: 1px solid #5DADD2;
+    background-color: #5DADD2;
+    border-radius: 2px;
+    text-align: left;
+    width: 15%; /* FIXING WIDTH IN PERCENT SO IT'S RESPONSIVE*/
+    padding: 0.5rem; /* ADDING A PADDING ON BUTTON TO HAVE SPACE */
+    font-size: 1vw; /* GIVING A SIZE TO THE POLICE */
+    white-space: nowrap; /* KEEP THE SAME SPACE */
+}
+
+.button-info a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* SERVICES */
+
+#section-services {
+    position: relative;
+    top: 160px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.separator {
+width: 10px;
+    height: 10px;
+    margin: 5px 0;
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    background-color: #5DADD2;
+    border: 4px white solid;
+}
+
+.separator:before, .separator:after {
+    content: "";
+    position: absolute;
+    border-top: 1px #E5E5E5 solid;
+    top: 50%;
+    width: 400%;
+    right: 122%;
+}
+
+.separatort:before {
+    right: 100%;
+    margin-right: 30%;
+}
+
+.separator:after {
+    left: 100%;
+    margin-left: 30%;
+}
+
+#services-intro {
+    width: 70%;
+    text-align: center;
+}
+
+#services-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+#services-content img {
+    width: 45%;
+}
+
+#services-info {
+    width: 35%;
+    position: relative;
+    left: 70px;
+}
+
+.services-blocks {
+    position: relative;
+    left: 50px;
+}
+
+.services-icons {
+    width: 50px;
+    height: 50px;
+    left: -50px;
+    top: 50px;
+    border: 1px solid #E5E5E5;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    color: #5DADD2;
+}
+
+.blue-dot {
+    position: absolute;
+    top: 16px;
+    left: 43px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: solid white 2px;
+    background-color: #5DADD2;
+}
+
+.services-speech {
+    margin-left: 30px;
+}
+
+
+
+h3 {
+    padding-bottom: 10px;
+}
+
+
+/*PORTFOLIO*/
+
+#section-portfolio {
+    position: relative;
+    top: 260px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #F5F5F5;
+    background-color: #F5F5F5;
+}
+
+#project-intro {
+    width: 50%;
+    text-align: center;
+    padding: 5px 0 25px;
+}
+
+#portfolio-menu {
+    width: 260px;
+    height: 30px;
+    border: 1px solid #E5E5E5;
+    background-color: #E5E5E5;
+    text-align: center;
+    line-height: 30px; 
+    margin-bottom: 30px;
+}
+
+#portfolio-menu-liste {
+
+}
+
+#portfolio-menu-liste ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#portfolio-menu-liste li {
+    padding-left: 8px;
+}
+#portfolio-menu-liste a {
+    text-decoration: none;
+    color: #000000;
+     position:absolute;
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    display: block;
+}
+#portfolio-menu-liste a:after{
+    content:'';
+    width:100%;
+    height:30px;
+    top: 0;
+    left:0;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition:all 0.5s;
+    position:absolute;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition:all 0.5s;
+}
+
+#portfolio-menu-liste a:hover:after {
+    background-color: #5DADD2;
+    width:60%;
+    margin-left:20%;
+    -moz-box-shadow: 10px 0px 0px #5DADD2;
+    -webkit-box-shadow: 10px 0px 0px #5DADD2;
+    -o-box-shadow: 10px 0px 0px #5DADD2;
+    box-shadow: 10px 0px 0px #5DADD2;
+    opacity: 0.5;
+}
+
+#portfolio-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 90%;
+}
+
+#porfolio-content img {
+    width: 100%;
+    margin: 0;
+}
+
+.project-element {
+    width: 22%;
+    position: relative;
+}
+.project-element img {
+    width: 100%;
+}
+.project-layer {
+    position: relative;
+    bottom: 0;
+    color: #fff;
+}
+
+.elements {
+    position: absolute;
+    bottom: 3px;
+    width: 99%;
+    height: 60px;
+    border: 1px solid #00000091;
+    background-color: #00000091;
+}
+.elements h4 {
+ margin: 5px 0 4px 5px;
+}
+
+.elements p {
+    margin-left: 5px;
+    font-size: 0.8em;
+}
+
+.eye-button {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: #5DADD2;
+    position: absolute;
+    top: -30%;
+    right: 6%;
+    width: 25px;
+    height: 25px;
+}
+
+.eye-button i {
+    color: #fff;
+    margin: 0 4px 3px 4px;
+    position: absolute;
+    top: 7px;
+    left: 1px;
+}
+
