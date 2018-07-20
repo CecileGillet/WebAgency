@@ -25,14 +25,14 @@ header {
     z-index: 1;
 }
 
-nav ul {
+#menu-dynamique ul {
     display: flex;
     list-style-type: none;
     color: #575A5E;
     text-decoration: none;
 }
 
-li {
+ #menu-dynamique .end {
     text-decoration: none;
     width: 100%;
 }
