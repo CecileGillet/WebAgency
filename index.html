@@ -6,6 +6,8 @@
 	<meta name="keywords" content="agence, web, infos, projet" />
 	<meta name="author" content="webagency" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />-->
+
 	<link href="./images/ico/favicon.ico" rel="icon" type="image/x-icon" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
 	<link href="./css/reset.css" rel="stylesheet" />
@@ -19,6 +21,23 @@
 	<meta property="og:url" content="http://www.A MODIFIER.com/"/>
 	<meta property="og:image" content="http://example.com/image.jpg"/>
 	<meta property="og:description" content="Présentation de WebAgency"/>
+	<!--script-->
+	<!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false">
+		function initialiser() {
+				var latlng = new google.maps.LatLng(46.779231, 6.659431);
+				//objet contenant des propriétés avec des identificateurs prédéfinis dans Google Maps permettant
+				//de définir des options d'affichage de notre carte
+				var options = {
+					center: latlng,
+					zoom: 19,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				
+				//constructeur de la carte qui prend en paramêtre le conteneur HTML
+				//dans lequel la carte doit s'afficher et les options
+				var carte = new google.maps.Map(document.getElementById("carte"), options);
+			}
+	</script>-->
 </head>
 <body>
 	<header>
@@ -232,7 +251,27 @@
 		</div>
 	</section>
 		
-	</section>
+	<footer>
+		<div id="carte">
+			<img src="./images/map.jpg" alt="map">
+		</div>
+		<div id="overlay-blue"></div>
+		<div id="contact">
+			<form method="post" action="traitement.php">
+			<div id="contact-infos">
+				<h4>Contact Info </h4>
+				<h5>WebAgency SAS </h5>
+				<p class="info-detail">25 Rue d'Hauteville 75010 Paris</p>
+				<p class="info-detail"><span>Tel:</span>01 02 03 04 05</p>
+			</div>
+			<input type="text" name="name" maxlength="40" placeholder="Name" />
+			<input type="email" name="email" maxlength="40" id="mail" placeholder="E-mail" />
+			<input type="text" name="subject" maxlength="40" placeholder="Subject" />
+			<textarea name="Message" placeholder="Message" rows="2" cols="10"></textarea>
+			<input id="button-envoyer" type="submit" value="Envoyer" />
+		</form>
 
+		</div>
+	</footer>
 </body>
 </html>
