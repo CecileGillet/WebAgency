@@ -343,29 +343,26 @@ h3 {
     margin-bottom: 30px;
 }
 
-#portfolio-menu-liste {
 
-}
-
-#portfolio-menu-liste ul {
+#portfolio-menu ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    list-style-type: none;
 }
 
-#portfolio-menu-liste li {
+#portfolio-menu li {
     padding-left: 8px;
 }
-#portfolio-menu-liste a {
+#portfolio-menu a {
     text-decoration: none;
     color: #000000;
      position:absolute;
     -webkit-transition: all 0.8s;
     -o-transition: all 0.8s;
     transition: all 0.8s;
-    display: block;
 }
-#portfolio-menu-liste a:after{
+#portfolio-menu a:after{
     content:'';
     width:100%;
     height:30px;
@@ -681,98 +678,4 @@ textarea {
 
 @media only screen and (max-width: 425px) {
 
- /*  body{
-    behavior :url("csshover.htc");
-   }
-
-  header #menu-dynamique li a {
-  display:block;
-  height:23px;
-  text-decoration:none;
-  color:#696969;
-  background-color:#FFFFFF;
-}
-header #menu-dynamique {
-  width:auto;
-  margin:10px 0px;
-  padding:0px;
-  display: flex;
-  flex-direction: column;
-}
-header #menu-dynamique ul {
-  width:150px;
-  list-style:none;
-  padding:0px;
-  margin:0px;
-  border-right:1px solid silver;
-}
-
-header #menu-dynamique ul li {
-  width:auto;
-  margin-left:5px;
-  padding-left:25px;
-  text-indent:5px;
-  height:23px;
-  background:url("bordure.png") no-repeat;
-}
-header #menu-dynamique ul li ul {
-  display:none;
-}
-header #menu-dynamique ul li:hover ul {
-  display:block;
-  position:relative;
-  top:-24px;
-  left:115px;
-}
-header#menu-dynamique ul li ul,
-header #menu-dynamique ul li:hover ul li ul, 
-header #menu-dynamique ul li:hover ul li:hover ul li ul{
-  display:none;
-}
-header #menu-dynamique ul li:hover ul,
-header #menu-dynamique ul li:hover ul li:hover ul,
-header #menu-dynamique ul li:hover ul li:hover ul li:hover ul{
-  display:block;
-  position:relative;
-  top:-24px;
-  left:115px;
-}
-header#menu-dynamique ul li.extend a {
-  background:white url("suite.gif") right no-repeat;
-}
-header#menu-dynamique ul li.extend:hover ul li.end a {
-  background-image:none;
-}
-header #menu-dynamique li:hover {
-  background:url("fleche_survol.png") no-repeat;
-}
-header #menu_dynamique li a:hover {
-  color:black;
-  background-color:#BBB7C7;
-}
-header #menu_dynamique ul li.extend:hover a,
-header #menu_dynamique ul li.extend:hover ul li:hover a,
-header #menu_dynamique ul li.extend:hover ul li.extend:hover ul li:hover a,
-header #menu_dynamique ul li.extend:hover ul li.extend:hover ul li.extend:hover ul li:hover a{
-  background-color:#BBB7C7;
-}
-header #menu_dynamique ul li.extend:hover ul li a,
-header #menu_dynamique ul li.extend:hover ul li:hover ul li a,
-header #menu_dynamique ul li.extend:hover ul li.extend:hover ul li:hover ul li a{
-  background-color:#FFFFFF;
-}
-header#menu_dynamique li.first{
-  border-top:1px solid silver;
-}
-header#menu_dynamique li.last{
-  border-bottom:1px solid silver;
-}
-header#menu_dynamique ul li.extend:hover {
-  width:120px;
-  height:23px;
-  overflow:hidden;
-}
-html > body header #menu_dynamique ul li.extend:hover {
-  overflow:visible;
-}*/
 }
