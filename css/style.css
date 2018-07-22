@@ -27,7 +27,7 @@ header {
 nav {
     display: flex;
     height: 100%;
-    line-height: 100%;
+    line-height: 100px;
 }
 nav ul {
     display: flex;
