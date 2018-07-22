@@ -422,6 +422,7 @@ h3 {
 .project-element {
     width: 22%;
     position: relative;
+    margin-bottom: 2%;
 }
 .project-element img {
     width: 100%;
@@ -434,17 +435,20 @@ h3 {
 
 .elements {
     opacity: 0;
-    cursor: pointer;
+    position: absolute;
+    top: -63px;
+    width: 99%;
+    height: 60px
 }
 
-.elements:hover {
+.project-layer .elements:hover {
     position: absolute;
-    top: -60px;
+    top: -63px;
     width: 99%;
     height: 60px;
     border: 1px solid #000000;
     background-color: #000000;
-    opacity: 0.7;
+    opacity: 0.7; 
 }
 .elements h4 {
  margin: 5px 0 4px 5px;
