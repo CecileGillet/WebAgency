@@ -193,7 +193,7 @@ h1 {
     width: 420px;
 }
 
-span {
+.webagency-intro span {
     color: #5DADD2;
     text-transform: uppercase;
 }
@@ -354,7 +354,7 @@ h3 {
 }
 
 #portfolio-menu {
-    width: 260px;
+    width: 313px;
     border: 1px solid #E5E5E5;
     background-color: #E5E5E5;
     line-height: 30px; 
@@ -367,42 +367,58 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-size: 0.9em;
 }
 
 #portfolio-menu li {
-    padding: 0.2rem;
+    padding: 0.2rem 0.8rem;
+    width: 83px;
 }
 #portfolio-menu a {
     text-decoration: none;
-    color: #000000;
-    -webkit-transition: all 0.8s;
-    -o-transition: all 0.8s;
-    transition: all 0.8s;
+
 }
-#portfolio-menu a:after{
-    content:'';
-    width:100%;
-    height:30px;
-    top: 0;
-    left:0;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition:all 0.5s;
-    position:absolute;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition:all 0.5s;
+#portfolio-menu #works-active {
+    position: relative;
+    background: #5DADD2;
+    border: 2px solid #5DADD2;
+    text-decoration: none;
+    border-bottom: 3px solid #468CAD;
 }
 
-#portfolio-menu-liste a:hover:after {
-    background-color: #5DADD2;
-    width:60%;
-    margin-left:20%;
-    -moz-box-shadow: 10px 0px 0px #5DADD2;
-    -webkit-box-shadow: 10px 0px 0px #5DADD2;
-    -o-box-shadow: 10px 0px 0px #5DADD2;
-    box-shadow: 10px 0px 0px #5DADD2;
-    opacity: 0.5;
+#works-active:after,
+#works-active:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 30px;
+    width: 0;
+    height: 20px;
+    border-style: solid;
+}
+
+#works-active:after {
+    top: 38px;
+    border-color: #468CAD transparent transparent transparent ;
+    border-width: 10px;
+}
+
+#works-active:before {
+    top: 38px;
+    border-color: #468CAD transparent transparent transparent ;
+    border-width: 11px;
+}
+
+#portfolio-menu .active-text {
+    color: #fff;
+}
+
+.all-active:hover {
+    background: #5DADD2;
+    border: 2px solid #5DADD2;
+    border-bottom: 3px solid #468CAD;
+    height: 30px;
+    width: 84px;
 }
 
 #portfolio-content {
@@ -506,14 +522,15 @@ footer {
     width: 280px;
     padding: 20px 20px 10px 30px;
     background-color: #fff;
-    border-radius: 10%;
+
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 270px;
     left: 750px;
     border: 1px solid #fff;
-    opacity: 0.8;
+    opacity: 0.82;
+    
 }
 
  
@@ -545,6 +562,7 @@ input {
     width: 90%;
     padding-left: 2%;
     margin-top: 2%;
+    
 }
 
 textarea {
@@ -562,7 +580,7 @@ textarea {
     display: flex;
     justify-content: center;
     cursor: pointer;
-    margin-left: 80px;
+    color: #fff;
 }
 
 
