@@ -56,44 +56,6 @@ header a {
     position:relative;
     width: 100%;
 }
-    /*-webkit-transition: all 0.8s;
-    -o-transition: all 0.8s;
-    transition: all 0.8s;
-    display: block;
-    padding: 14px 0;
-    float: left;
-    width: 100%;
-    left: 15%;
-}
-
-header a:after{
-    content:'';
-    width: 100%;
-    height: 2px;
-    top: 0;
-    left:0;
-    -webkit-border-radius: 40%;
-    -moz-border-radius: 40%;
-    border-radius:40%;
-    top: 2px;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition:all 0.5s;
-    position:absolute;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition:all 0.5s;
-}
-
-header a:hover:after{
-    background-color: #5DADD2;
-    width:60%;
-    margin-left:20%;
-    -moz-box-shadow: 10px 0px 0px #5DADD2;
-    -webkit-box-shadow: 10px 0px 0px #5DADD2;
-    -o-box-shadow: 10px 0px 0px #5DADD2;
-    box-shadow: 10px 0px 0px #5DADD2;
-}*/
 
 header a:hover {
     color: #5DADD2;
