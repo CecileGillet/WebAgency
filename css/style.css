@@ -34,6 +34,7 @@ header {
     justify-content: space-around;
     align-items: center;
 }
+
 nav {
     display: flex;
     height: 100%;
@@ -48,6 +49,7 @@ nav ul {
 nav li {
     width: 100px;
     text-align: center;
+    border-top: 3px solid #FFFFF0; 
 }
 
 header a {
@@ -64,7 +66,6 @@ header a:hover {
 
 nav li:hover {
     border-top: 3px solid #5DADD2;
-    margin-left: 5%;
 }
 
 nav .active {
@@ -655,6 +656,122 @@ textarea {
 
 /*MEDIAQUIERIES MOBILE*/
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 480px) {
+    /*HEADER*/
+    header {
+        height: 102px;
+    }
+   #container-logo-menu {
+    flex-direction: column;
+   }
 
+   #logo-container {
+    margin: 2% 0 5% 0;
+    width: 35%;
+   }
+    nav {
+        line-height: 40px;
+        height: 50%;
+    }
+
+    nav .active {
+        border-top: 2px solid #5DADD2;
+        border-radius: 5%;
+    }
+
+    nav li {
+        width: 65px;
+    }
+
+    /*SLIDER*/
+    #slider-img {
+        display: none;
+    }
+
+    #arrow-left {
+        display: none;
+    }
+
+    #arrow-right {
+        display: none;
+    }
+
+    .button-info {
+        display: none;
+    }
+
+    .webagency-intro {
+        text-align: center;
+    }
+    h1 {
+        color: #575A5E;
+        font-size: 1.2rem;
+    }
+
+    .slider-paragraphe {
+        color: #575A5E;
+        font-size: 0.7rem;
+    }
+    /*SERVICES*/
+    #section-services {
+        top: 205px;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    #services-intro {
+        font-size: 0.7rem;
+    }
+
+    #services-content {
+        display: block;
+    }
+    #services-content img {
+        display: none;
+    }
+    
+    #services-info {
+        top: -60px;
+        width: 65%;
+    }
+
+    /*PORTFOLIO*/ 
+    .project-element {
+        width: 35%;
+    }
+
+    .project-layer .elements:hover {
+        top: -43px;
+        height: 40px;
+    }
+
+    .elements h4 {
+        margin: 3px 0 4px 5px;
+        font-size: 0.7rem;
+    }
+
+    .elements p{
+        font-size: 0.6rem;
+    }
+
+    .eye-button {
+        width: 17px;
+        height: 17px;
+        border: 1.5px solid #fff;
+    }
+    .eye-button i {
+        font-size: 0.5rem;
+    }
+    /*MAP*/
+    #overlay-blue {
+        width: 380px;
+        height: 174px;
+    }
+    #contact {
+        top: 200px;
+        left: 70px;
+        border: 1px solid #5DADD2;
+        width: 260px;
+
+    }
 }
