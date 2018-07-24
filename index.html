@@ -258,12 +258,21 @@
 	<script>
 		console.log("test")
 		var map;
+
+		var myLatLng = {lat: 48.873052, lng: 2.349826};
+
       function initMap() {
         map = new google.maps.Map(document.getElementById('carte'), {
-          center: {lat: 48.873052, lng: 2.349826
-          },
-          zoom: 8
+          center: myLatLng,
+          zoom: 11
         });
+
+
+          var marker = new google.maps.Marker({
+              position: myLatLng,
+              map: map,
+              title: 'Bienvenue chez Web Agency !'
+          });
       }
 	</script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQrfioyrvNIZjlIcq0oTp2J9S-EvXMqYU&callback=initMap"
