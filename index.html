@@ -7,7 +7,7 @@
 	<meta name="author" content="webagency" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />-->
-
+	
 	<link href="./images/ico/favicon.ico" rel="icon" type="image/x-icon" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
 	<link href="./css/reset.css" rel="stylesheet" />
@@ -235,7 +235,7 @@
 		
 	<footer>
 		<div id="carte">
-			<img src="./images/map.jpg" alt="map">
+			
 		</div>
 		<div id="overlay-blue"></div>
 		<div id="contact">
@@ -255,5 +255,17 @@
 
 		</div>
 	</footer>
+	<script>
+		console.log("test")
+		var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('carte'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQrfioyrvNIZjlIcq0oTp2J9S-EvXMqYU&callback=initMap"
+    async defer></script>
 </body>
 </html>
