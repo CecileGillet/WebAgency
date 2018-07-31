@@ -618,6 +618,7 @@ footer {
 
 #carte {
     width: 90%;
+    height: 316px;
     left: 40px;
 }
 
@@ -712,10 +713,13 @@ textarea {
 
     .webagency-intro {
         text-align: center;
+        left: 15%;
+        width: 300px;
     }
     h1 {
         color: #575A5E;
         font-size: 1.2rem;
+        width: 300px;
     }
 
     .slider-paragraphe {
@@ -735,6 +739,7 @@ textarea {
 
     #services-content {
         display: block;
+        left: -40px;
     }
     #services-content img {
         display: none;
@@ -780,13 +785,13 @@ textarea {
     }
 
     #overlay-blue {
-        width: 380px;
+        width: 386px;
         height: 174px;
         left: 20px;
     }
     #contact {
         top: 200px;
-        left: 70px;
+        left: 15%;
         border: 1px solid #5DADD2;
         width: 260px;
 
